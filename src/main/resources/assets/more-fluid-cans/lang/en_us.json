@@ -1,3 +1,8 @@
 {
-  "item.more-fluid-cans.copper_can": "Copper Can"
+  "item.more-fluid-cans.copper_can": "Copper Can",
+  "item.more-fluid-cans.copper_can.tooltip": "Stackable container holding 1 ingot of fluid",
+  "item.more-fluid-cans.emerald_can": "Emerald Can",
+  "item.more-fluid-cans.emerald_can.tooltip": "Stackable container holding 1 gem of fluid",
+  "item.more-fluid-cans.amethyst_can": "Amethyst Can",
+  "item.more-fluid-cans.amethyst_can.tooltip": "Stackable container holding 1 brick of fluid"
 }

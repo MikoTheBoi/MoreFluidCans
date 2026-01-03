@@ -3,6 +3,10 @@ plugins {
 	id 'maven-publish'
 }
 
+fabricApi {
+	configureDataGeneration()
+}
+
 version = project.mod_version
 group = project.maven_group
 
