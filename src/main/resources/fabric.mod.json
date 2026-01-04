@@ -3,20 +3,22 @@
 	"id": "more-fluid-cans",
 	"version": "${version}",
 	"name": "More Fluid Cans",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds more fluid can variants from Tinkers Construct!",
 	"authors": [
-		"Me!"
+		"MikoTheBoi3840"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MikoTheBoi/MoreFluidCans"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/more-fluid-cans/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"mikos.fluidcans.MoreFluidCans"
+		],
+		"client": [
+			"mikos.fluidcans.MoreFluidCansClient"
 		]
 	},
 	"mixins": [

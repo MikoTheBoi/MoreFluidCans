@@ -1,5 +1,5 @@
 {
-  "parent": "forge:item/default",
+  "parent": "item/generated",
   "loader": "more-fluid-cans:copper_can",
   "textures": {
     "base": "more-fluid-cans:item/copper_can",

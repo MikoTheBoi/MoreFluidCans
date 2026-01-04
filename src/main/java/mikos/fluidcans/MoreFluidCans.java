@@ -3,6 +3,7 @@ package mikos.fluidcans;
 import mikos.fluidcans.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,5 +19,9 @@ public class MoreFluidCans implements ModInitializer {
 	public void onInitialize() {
 		ModItems.RegisterModItems();
 
+	}
+
+	public static ResourceLocation getResource(String name) {
+		return new ResourceLocation(MOD_ID, name);
 	}
 }
