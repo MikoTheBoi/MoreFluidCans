@@ -34,8 +34,8 @@ public class CopperCanItem extends Item {
 
   public CopperCanItem(Properties properties, long capacity) {
     super(properties);
-    FluidStorage.ITEM.registerForItems((itemStack, context) -> new CopperCanFluidHandler(context), this);
     CAPACITY = capacity;
+    FluidStorage.ITEM.registerForItems((itemStack, context) -> new CopperCanFluidHandler(context), this);
   }
 
   @Override
