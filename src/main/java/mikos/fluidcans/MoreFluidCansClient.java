@@ -20,5 +20,7 @@ public class MoreFluidCansClient implements ClientModInitializer {
     }
     static void registerModelLoaders(ResourceManager manager, BlockColors colors, ProfilerFiller profiler, int mipLevel) {
         ModelLoaderRegistry.registerLoader(MoreFluidCans.getResource("copper_can"), CopperCanModel.LOADER);
+        ModelLoaderRegistry.registerLoader(MoreFluidCans.getResource("emerald_can"), CopperCanModel.LOADER);
+        ModelLoaderRegistry.registerLoader(MoreFluidCans.getResource("amethyst_can"), CopperCanModel.LOADER);
     }
 }
