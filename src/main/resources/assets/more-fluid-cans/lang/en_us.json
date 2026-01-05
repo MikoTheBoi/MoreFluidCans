@@ -5,7 +5,7 @@
   "item.more-fluid-cans.emerald_can": "Emerald Can",
   "item.more-fluid-cans.emerald_can.tooltip": "Stackable container holding 1 gem of fluid",
   "item.more-fluid-cans.emerald_can.contents": "Contains: 1 gem %s",
-  "item.more-fluid-cans.brick_can": "Amethyst Can",
+  "item.more-fluid-cans.brick_can": "Brick Can",
   "item.more-fluid-cans.brick_can.tooltip": "Stackable container holding 1 brick of fluid",
   "item.more-fluid-cans.brick_can.contents": "Contains: 1 brick %s"
 }

@@ -1,8 +1,8 @@
 {
   "parent": "forge:item/default",
-  "loader": "more-fluid-cans:amethyst_can",
+  "loader": "more-fluid-cans:brick_can",
   "textures": {
-    "base": "more-fluid-cans:item/amethyst_can",
+    "base": "more-fluid-cans:item/brick_can",
     "fluid": "more-fluid-cans:item/default_can_fluid"
   }
 }

@@ -1,6 +1,6 @@
 package mikos.fluidcans.item.custom;
 
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
+import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidStorage;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Registry;
@@ -16,7 +16,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
-import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -28,13 +27,12 @@ import java.util.Objects;
 @SuppressWarnings("removal")
 public class CopperCanItem extends Item {
 
-  public static long CAPACITY = 0L;
+  public static long CAPACITY = 9000L;
   private static final String TAG_FLUID = "fluid";
   private static final String TAG_FLUID_TAG = "fluid_tag";
 
-  public CopperCanItem(Properties properties, long capacity) {
+  public CopperCanItem(Properties properties) {
     super(properties);
-    CAPACITY = capacity;
     FluidStorage.ITEM.registerForItems((itemStack, context) -> new CopperCanFluidHandler(context), this);
   }
 
