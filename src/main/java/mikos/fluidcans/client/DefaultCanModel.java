@@ -32,7 +32,7 @@ import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import lombok.RequiredArgsConstructor;
 import lombok.With;
 import mikos.fluidcans.MoreFluidCans;
-import mikos.fluidcans.item.custom.CopperCanItem;
+import mikos.fluidcans.item.custom.DefaultCanItem;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.block.model.ItemOverrides;
 import net.minecraft.client.renderer.block.model.ItemTransforms.TransformType;
@@ -61,7 +61,7 @@ import java.util.function.Function;
  */
 @SuppressWarnings("removal")
 @RequiredArgsConstructor
-public final class CopperCanModel implements IModelGeometry<CopperCanModel> {
+public final class DefaultCanModel implements IModelGeometry<DefaultCanModel> {
   public static final Loader LOADER = new Loader();
 
   // minimal Z offset to prevent depth-fighting
@@ -146,15 +146,15 @@ public final class CopperCanModel implements IModelGeometry<CopperCanModel> {
     return texs;
   }
 
-  private static class Loader implements IModelLoader<CopperCanModel> {
+  private static class Loader implements IModelLoader<DefaultCanModel> {
     @Override
     public void onResourceManagerReload(ResourceManager resourceManager) {}
 
     @Override
-    public CopperCanModel read(JsonDeserializationContext deserializationContext, JsonObject modelContents) {
+    public DefaultCanModel read(JsonDeserializationContext deserializationContext, JsonObject modelContents) {
       boolean coverIsMask = GsonHelper.getAsBoolean(modelContents, "coverIsMask", true);
       boolean applyFluidLuminosity = GsonHelper.getAsBoolean(modelContents, "applyFluidLuminosity", true);
-      return new CopperCanModel(FluidStack.EMPTY, coverIsMask, applyFluidLuminosity);
+      return new DefaultCanModel(FluidStack.EMPTY, coverIsMask, applyFluidLuminosity);
     }
   }
 
@@ -164,9 +164,9 @@ public final class CopperCanModel implements IModelGeometry<CopperCanModel> {
     private final ItemOverrides nested;
     private final ModelBakery bakery;
     private final IModelConfiguration owner;
-    private final CopperCanModel parent;
+    private final DefaultCanModel parent;
 
-    private ContainedFluidOverrideHandler(ItemOverrides nested, ModelBakery bakery, IModelConfiguration owner, CopperCanModel parent) {
+    private ContainedFluidOverrideHandler(ItemOverrides nested, ModelBakery bakery, IModelConfiguration owner, DefaultCanModel parent) {
       this.nested = nested;
       this.bakery = bakery;
       this.owner = owner;
@@ -182,9 +182,9 @@ public final class CopperCanModel implements IModelGeometry<CopperCanModel> {
     public BakedModel resolve(BakedModel originalModel, ItemStack stack, @Nullable ClientLevel world, @Nullable LivingEntity entity, int seed) {
       BakedModel overriden = nested.resolve(originalModel, stack, world, entity, seed);
       if (overriden != originalModel) return overriden;
-      Fluid fluid = CopperCanItem.getFluid(stack.getTag());
+      Fluid fluid = DefaultCanItem.getFluid(stack.getTag());
       if (fluid != Fluids.EMPTY) {
-        FluidStack fluidStack = new FluidStack(fluid, CopperCanItem.CAPACITY, CopperCanItem.getFluidTag(stack.getTag()));
+        FluidStack fluidStack = new FluidStack(fluid, DefaultCanItem.CAPACITY, DefaultCanItem.getFluidTag(stack.getTag()));
         return cache.computeIfAbsent(fluidStack, this::getUncahcedModel);
       }
       return originalModel;
