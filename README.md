@@ -16,6 +16,7 @@
 
 ## Scope
 - Make items datadriven to make adding custom variants easier for pack developers
+- Add recipes to the cans (this isn't really scope just something I forgot to add)
 - Optimizing code lol
   ### Not in scope
   - (Neo)Forge ports, these already have better options than this mod
