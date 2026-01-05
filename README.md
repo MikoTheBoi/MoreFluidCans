@@ -1,3 +1,4 @@
+<p align="center"><img src="https://github.com/MikoTheBoi/MoreFluidCans/blob/master/src/main/resources/assets/more-fluid-cans/icon.png" height="250" alt="Logo"></p>
 <h1 align="center">More Fluid Cans</h1>
 <p align="center">A mod that adds the Copper Can from <a href="https://github.com/SlimeKnights/TinkersConstruct"> Tinkers Construct</a> and more variants!</p>
 <p align="center"><b>This is <i>not</i> an addon for Tconstruct and does <i>not</i> use it as a dependency!</b></p>
