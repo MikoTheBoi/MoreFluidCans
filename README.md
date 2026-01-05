@@ -6,9 +6,9 @@
 
 
 ## Currently adds
-- Copper Can - Stackable container that holds 1 ingot of fluid
-- Emerald Can - Stackable container that holds 1 gem of fluid
-- Brick Can - Stackable container that holds 1 brick of fluid
+- Copper Can - Stackable container that holds 1 ingot (9000 droplets/111.(1)mB) of fluid
+- Emerald Can - Stackable container that holds 1 gem (8100 droplets/100mB) of fluid
+- Brick Can - Stackable container that holds 1 brick (20250 droplets/250mB) of fluid
 
 ## Credits
 - Code and Copper Can assets from [Tinkers Construct](https://github.com/SlimeKnights/TinkersConstruct) by [SlimeKnights](https://github.com/SlimeKnights)
