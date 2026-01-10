@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "more-fluid-cans",
+	"id": "morefluidcans",
 	"version": "${version}",
 	"name": "More Fluid Cans",
 	"description": "Adds more fluid can variants from Tinkers Construct!",
@@ -11,7 +11,7 @@
 		"sources": "https://github.com/MikoTheBoi/MoreFluidCans"
 	},
 	"license": "MIT",
-	"icon": "assets/more-fluid-cans/icon.png",
+	"icon": "assets/morefluidcans/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -22,7 +22,7 @@
 		]
 	},
 	"mixins": [
-		"more-fluid-cans.mixins.json"
+      "morefluidcans.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",

@@ -1,0 +1,8 @@
+{
+  "parent": "forge:item/default",
+  "loader": "morefluidcans:brick_can",
+  "textures": {
+    "base": "morefluidcans:item/brick_can",
+    "fluid": "morefluidcans:item/default_can_fluid"
+  }
+}

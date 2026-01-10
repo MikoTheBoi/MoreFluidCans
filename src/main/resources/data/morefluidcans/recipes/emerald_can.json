@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:copper_ingot"
+      "item": "minecraft:emerald"
     }
   },
   "result": {
-    "item": "more-fluid-cans:copper_can",
+    "item": "morefluidcans:emerald_can",
     "count": 3
   }
 }

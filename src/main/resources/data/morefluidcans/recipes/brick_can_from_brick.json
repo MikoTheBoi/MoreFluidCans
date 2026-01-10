@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "minecraft:brick"
   },
-  "result": "more-fluid-cans:brick_can",
+  "result": "morefluidcans:brick_can",
   "count": 1
 }

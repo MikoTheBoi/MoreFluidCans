@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "minecraft:flower_pot"
   },
-  "result": "more-fluid-cans:brick_can",
+  "result": "morefluidcans:brick_can",
   "count": 3
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "forge:item/default",
+  "loader": "morefluidcans:copper_can",
+  "textures": {
+    "base": "morefluidcans:item/copper_can",
+    "fluid": "morefluidcans:item/default_can_fluid"
+  }
+}

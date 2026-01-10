@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "more-fluid-cans:copper_can",
-    "more-fluid-cans:emerald_can",
-    "more-fluid-cans:brick_can"
+    "morefluidcans:copper_can",
+    "morefluidcans:emerald_can",
+    "morefluidcans:brick_can"
   ]
 }
